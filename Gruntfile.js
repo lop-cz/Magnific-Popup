@@ -72,6 +72,7 @@ module.exports = function(grunt) {
           'iframe',
           'gallery',
           'retina',
+          'swf',
           'fastclick'
         ],
         basePath: 'src/js/',
