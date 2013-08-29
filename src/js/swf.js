@@ -34,7 +34,7 @@ $.magnificPopup.registerModule(SWF_NS, {
 				'</object>'+
 			'</div>',
 		wmode: 'opaque',
-		fallback: 'This page requires <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>',
+		fallback: 'This page requires <a href="http://get.adobe.com/flashplayer/">Adobe Flash Player</a>'
 	},
 	proto: {
 		initSwf: function() {
@@ -51,7 +51,7 @@ $.magnificPopup.registerModule(SWF_NS, {
 			
 			var dataObj = {
 				wmode_value: swfSt.wmode,
-				fallback: swfSt.fallback,
+				fallback: swfSt.fallback
 			};
 			if (mfp.isIE) {
 				dataObj.movie_value = embedSrc;	// 'movie' param for IE
