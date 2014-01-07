@@ -39,7 +39,7 @@ $.magnificPopup.registerModule(SWF_NS, {
 	proto: {
 		initSwf: function() {
 			mfp.types.push(SWF_NS);
-			mfp.isIE = navigator.appVersion.indexOf("MSIE") !== -1; // TODO: watch out for different UA string in IE11
+			mfp.isIE = window.ActiveXObject != undefined || 'ActiveXObject' in window;
 
 			_mfpOn('BeforeOpen', function(e) {
 					if (mfp.isIE) mfp.st[SWF_NS].markup = mfp.st[SWF_NS].markupIE;
