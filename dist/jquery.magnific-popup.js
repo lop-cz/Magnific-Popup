@@ -1,4 +1,4 @@
-/*! Magnific Popup - v0.9.9 - 2014-01-06
+/*! Magnific Popup - v0.9.9 - 2014-01-08
 * http://dimsemenov.com/plugins/magnific-popup/
 * Copyright (c) 2014 Dmitry Semenov; */
 ;(function($) {
@@ -1992,7 +1992,7 @@ $.magnificPopup.registerModule(SWF_NS, {
 	proto: {
 		initSwf: function() {
 			mfp.types.push(SWF_NS);
-			mfp.isIE = window.ActiveXObject != undefined || 'ActiveXObject' in window;
+			mfp.isIE = window.ActiveXObject !== undefined || 'ActiveXObject' in window;
 
 			_mfpOn('BeforeOpen', function(e) {
 					if (mfp.isIE) mfp.st[SWF_NS].markup = mfp.st[SWF_NS].markupIE;
